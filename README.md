@@ -13,10 +13,13 @@ void setup() {
   dvdLED.clear();  
 }   
 void loop(){  
+  //dvdLED.getButtons(); //Get the button click ID. I have it 8, 32, 64  
   dvdLED.print("HELLO");  
   delay(1000);  
   dvdLED.clear(); //Clear display.  
-  dvdLED.setTime(188, 88, 99); //Show three numbers between colon.  
+  dvdLED.setTime(188, 88, 99); //Show three numbers between colon.
+  dvdLED.setLEDon(LED_CL1); //Turn on the LED  
+  dvdLED.setLEDon(LED_CL2); //Turn on the LED 
   delay(1000);  
   dvdLED.clear();   
   delay(1000);  
@@ -37,9 +40,8 @@ void loop(){
   dvdLED.setSEGoff(4); //Disable segment by number  
   dvdLED.setSEGoff(5); //Disable segment by number  
   delay(1000);  
-  dvdLED.ticker("Goodbye", left, 300);  
-  dvdLED.ticker("Goodbye", right, 300);  
-    
+  dvdLED.ticker("Goodbye", left, 300);  //Running line, right to left, delay (300) between each character  
+  dvdLED.ticker("Goodbye", right, 300); //Running line, left to right, delay (300) between each character  
 }  
   
 /* sequence of LEDs:  
