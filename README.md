@@ -4,7 +4,7 @@
 Example  
   
 #include <SC6928B.h>  
-// define - data pin D11, clock pin D8 and strobe pin D7  
+// define - data pin D8, clock pin D8 and strobe pin D10  
 // обьявление портов: DIO - порт D8, CLK - D9, STB - D10  
 SC6928B dvdLED(8, 9, 10);  
 
