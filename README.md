@@ -1,5 +1,5 @@
 # SC6928B  
-7-Ssegments indicator Arduino Library  
+7-Segments indicator Arduino Library  
   
 Example  
   
